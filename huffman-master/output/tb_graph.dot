@@ -1,0 +1,79 @@
+// Huffman Tree
+digraph {
+	1 [label=1 shape=doublecircle]
+	"" -> 1
+	11 [label=11 shape=doublecircle]
+	1 -> 11
+	111 [label=111 shape=doublecircle]
+	11 -> 111
+	1111 [label=1111 shape=doublecircle]
+	111 -> 1111
+	11111 [label="1: 11111" color=black fillcolor=yellow shape=invhouse style=filled]
+	1111 -> 11111
+	11110 [label=11110 shape=doublecircle]
+	1111 -> 11110
+	111101 [label="250: 111101" color=black fillcolor=yellow shape=invhouse style=filled]
+	11110 -> 111101
+	111100 [label=111100 shape=doublecircle]
+	11110 -> 111100
+	1111001 [label="251: 1111001" color=black fillcolor=yellow shape=invhouse style=filled]
+	111100 -> 1111001
+	1111000 [label="255: 1111000" color=black fillcolor=yellow shape=invhouse style=filled]
+	111100 -> 1111000
+	1110 [label=1110 shape=doublecircle]
+	111 -> 1110
+	11101 [label=11101 shape=doublecircle]
+	1110 -> 11101
+	111011 [label="253: 111011" color=black fillcolor=yellow shape=invhouse style=filled]
+	11101 -> 111011
+	111010 [label="254: 111010" color=black fillcolor=yellow shape=invhouse style=filled]
+	11101 -> 111010
+	11100 [label="18: 11100" color=black fillcolor=yellow shape=invhouse style=filled]
+	1110 -> 11100
+	110 [label=110 shape=doublecircle]
+	11 -> 110
+	1101 [label=1101 shape=doublecircle]
+	110 -> 1101
+	11011 [label="248: 11011" color=black fillcolor=yellow shape=invhouse style=filled]
+	1101 -> 11011
+	11010 [label=11010 shape=doublecircle]
+	1101 -> 11010
+	110101 [label="9: 110101" color=black fillcolor=yellow shape=invhouse style=filled]
+	11010 -> 110101
+	110100 [label="10: 110100" color=black fillcolor=yellow shape=invhouse style=filled]
+	11010 -> 110100
+	1100 [label="11: 1100" color=black fillcolor=yellow shape=invhouse style=filled]
+	110 -> 1100
+	10 [label=10 shape=doublecircle]
+	1 -> 10
+	101 [label=101 shape=doublecircle]
+	10 -> 101
+	1011 [label="2: 1011" color=black fillcolor=yellow shape=invhouse style=filled]
+	101 -> 1011
+	1010 [label=1010 shape=doublecircle]
+	101 -> 1010
+	10101 [label="15: 10101" color=black fillcolor=yellow shape=invhouse style=filled]
+	1010 -> 10101
+	10100 [label=10100 shape=doublecircle]
+	1010 -> 10100
+	101001 [label=101001 shape=doublecircle]
+	10100 -> 101001
+	1010011 [label="7: 1010011" color=black fillcolor=yellow shape=invhouse style=filled]
+	101001 -> 1010011
+	1010010 [label="0: 1010010" color=black fillcolor=yellow shape=invhouse style=filled]
+	101001 -> 1010010
+	101000 [label=101000 shape=doublecircle]
+	10100 -> 101000
+	1010001 [label="252: 1010001" color=black fillcolor=yellow shape=invhouse style=filled]
+	101000 -> 1010001
+	1010000 [label="8: 1010000" color=black fillcolor=yellow shape=invhouse style=filled]
+	101000 -> 1010000
+	100 [label=100 shape=doublecircle]
+	10 -> 100
+	1001 [label="20: 1001" color=black fillcolor=yellow shape=invhouse style=filled]
+	100 -> 1001
+	1000 [label="241: 1000" color=black fillcolor=yellow shape=invhouse style=filled]
+	100 -> 1000
+	0 [label="26: 0" color=black fillcolor=yellow shape=invhouse style=filled]
+	"" -> 0
+}

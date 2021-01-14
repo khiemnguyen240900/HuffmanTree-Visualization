@@ -1,0 +1,715 @@
+// Huffman Tree
+digraph {
+	1 [label=1 shape=doublecircle]
+	"" -> 1
+	11 [label=11 shape=doublecircle]
+	1 -> 11
+	111 [label=111 shape=doublecircle]
+	11 -> 111
+	1111 [label=1111 shape=doublecircle]
+	111 -> 1111
+	11111 [label=11111 shape=doublecircle]
+	1111 -> 11111
+	111111 [label="222: 111111" color=black fillcolor=yellow shape=invhouse style=filled]
+	11111 -> 111111
+	111110 [label=111110 shape=doublecircle]
+	11111 -> 111110
+	1111101 [label="85: 1111101" color=black fillcolor=yellow shape=invhouse style=filled]
+	111110 -> 1111101
+	1111100 [label=1111100 shape=doublecircle]
+	111110 -> 1111100
+	11111001 [label="125: 11111001" color=black fillcolor=yellow shape=invhouse style=filled]
+	1111100 -> 11111001
+	11111000 [label="116: 11111000" color=black fillcolor=yellow shape=invhouse style=filled]
+	1111100 -> 11111000
+	11110 [label=11110 shape=doublecircle]
+	1111 -> 11110
+	111101 [label=111101 shape=doublecircle]
+	11110 -> 111101
+	1111011 [label="71: 1111011" color=black fillcolor=yellow shape=invhouse style=filled]
+	111101 -> 1111011
+	1111010 [label=1111010 shape=doublecircle]
+	111101 -> 1111010
+	11110101 [label="119: 11110101" color=black fillcolor=yellow shape=invhouse style=filled]
+	1111010 -> 11110101
+	11110100 [label="114: 11110100" color=black fillcolor=yellow shape=invhouse style=filled]
+	1111010 -> 11110100
+	111100 [label=111100 shape=doublecircle]
+	11110 -> 111100
+	1111001 [label="148: 1111001" color=black fillcolor=yellow shape=invhouse style=filled]
+	111100 -> 1111001
+	1111000 [label=1111000 shape=doublecircle]
+	111100 -> 1111000
+	11110001 [label="108: 11110001" color=black fillcolor=yellow shape=invhouse style=filled]
+	1111000 -> 11110001
+	11110000 [label="110: 11110000" color=black fillcolor=yellow shape=invhouse style=filled]
+	1111000 -> 11110000
+	1110 [label=1110 shape=doublecircle]
+	111 -> 1110
+	11101 [label=11101 shape=doublecircle]
+	1110 -> 11101
+	111011 [label="214: 111011" color=black fillcolor=yellow shape=invhouse style=filled]
+	11101 -> 111011
+	111010 [label=111010 shape=doublecircle]
+	11101 -> 111010
+	1110101 [label=1110101 shape=doublecircle]
+	111010 -> 1110101
+	11101011 [label="70: 11101011" color=black fillcolor=yellow shape=invhouse style=filled]
+	1110101 -> 11101011
+	11101010 [label="113: 11101010" color=black fillcolor=yellow shape=invhouse style=filled]
+	1110101 -> 11101010
+	1110100 [label=1110100 shape=doublecircle]
+	111010 -> 1110100
+	11101001 [label="83: 11101001" color=black fillcolor=yellow shape=invhouse style=filled]
+	1110100 -> 11101001
+	11101000 [label="120: 11101000" color=black fillcolor=yellow shape=invhouse style=filled]
+	1110100 -> 11101000
+	11100 [label=11100 shape=doublecircle]
+	1110 -> 11100
+	111001 [label=111001 shape=doublecircle]
+	11100 -> 111001
+	1110011 [label="115: 1110011" color=black fillcolor=yellow shape=invhouse style=filled]
+	111001 -> 1110011
+	1110010 [label="10: 1110010" color=black fillcolor=yellow shape=invhouse style=filled]
+	111001 -> 1110010
+	111000 [label=111000 shape=doublecircle]
+	11100 -> 111000
+	1110001 [label="52: 1110001" color=black fillcolor=yellow shape=invhouse style=filled]
+	111000 -> 1110001
+	1110000 [label="36: 1110000" color=black fillcolor=yellow shape=invhouse style=filled]
+	111000 -> 1110000
+	110 [label=110 shape=doublecircle]
+	11 -> 110
+	1101 [label=1101 shape=doublecircle]
+	110 -> 1101
+	11011 [label=11011 shape=doublecircle]
+	1101 -> 11011
+	110111 [label="225: 110111" color=black fillcolor=yellow shape=invhouse style=filled]
+	11011 -> 110111
+	110110 [label="157: 110110" color=black fillcolor=yellow shape=invhouse style=filled]
+	11011 -> 110110
+	11010 [label=11010 shape=doublecircle]
+	1101 -> 11010
+	110101 [label=110101 shape=doublecircle]
+	11010 -> 110101
+	1101011 [label="250: 1101011" color=black fillcolor=yellow shape=invhouse style=filled]
+	110101 -> 1101011
+	1101010 [label="20: 1101010" color=black fillcolor=yellow shape=invhouse style=filled]
+	110101 -> 1101010
+	110100 [label=110100 shape=doublecircle]
+	11010 -> 110100
+	1101001 [label="112: 1101001" color=black fillcolor=yellow shape=invhouse style=filled]
+	110100 -> 1101001
+	1101000 [label="179: 1101000" color=black fillcolor=yellow shape=invhouse style=filled]
+	110100 -> 1101000
+	1100 [label=1100 shape=doublecircle]
+	110 -> 1100
+	11001 [label=11001 shape=doublecircle]
+	1100 -> 11001
+	110011 [label=110011 shape=doublecircle]
+	11001 -> 110011
+	1100111 [label=1100111 shape=doublecircle]
+	110011 -> 1100111
+	11001111 [label="111: 11001111" color=black fillcolor=yellow shape=invhouse style=filled]
+	1100111 -> 11001111
+	11001110 [label="127: 11001110" color=black fillcolor=yellow shape=invhouse style=filled]
+	1100111 -> 11001110
+	1100110 [label="162: 1100110" color=black fillcolor=yellow shape=invhouse style=filled]
+	110011 -> 1100110
+	110010 [label=110010 shape=doublecircle]
+	11001 -> 110010
+	1100101 [label="7: 1100101" color=black fillcolor=yellow shape=invhouse style=filled]
+	110010 -> 1100101
+	1100100 [label=1100100 shape=doublecircle]
+	110010 -> 1100100
+	11001001 [label="255: 11001001" color=black fillcolor=yellow shape=invhouse style=filled]
+	1100100 -> 11001001
+	11001000 [label="84: 11001000" color=black fillcolor=yellow shape=invhouse style=filled]
+	1100100 -> 11001000
+	11000 [label=11000 shape=doublecircle]
+	1100 -> 11000
+	110001 [label=110001 shape=doublecircle]
+	11000 -> 110001
+	1100011 [label="196: 1100011" color=black fillcolor=yellow shape=invhouse style=filled]
+	110001 -> 1100011
+	1100010 [label="106: 1100010" color=black fillcolor=yellow shape=invhouse style=filled]
+	110001 -> 1100010
+	110000 [label=110000 shape=doublecircle]
+	11000 -> 110000
+	1100001 [label=1100001 shape=doublecircle]
+	110000 -> 1100001
+	11000011 [label="67: 11000011" color=black fillcolor=yellow shape=invhouse style=filled]
+	1100001 -> 11000011
+	11000010 [label="134: 11000010" color=black fillcolor=yellow shape=invhouse style=filled]
+	1100001 -> 11000010
+	1100000 [label=1100000 shape=doublecircle]
+	110000 -> 1100000
+	11000001 [label="95: 11000001" color=black fillcolor=yellow shape=invhouse style=filled]
+	1100000 -> 11000001
+	11000000 [label="105: 11000000" color=black fillcolor=yellow shape=invhouse style=filled]
+	1100000 -> 11000000
+	10 [label=10 shape=doublecircle]
+	1 -> 10
+	101 [label=101 shape=doublecircle]
+	10 -> 101
+	1011 [label=1011 shape=doublecircle]
+	101 -> 1011
+	10111 [label=10111 shape=doublecircle]
+	1011 -> 10111
+	101111 [label="245: 101111" color=black fillcolor=yellow shape=invhouse style=filled]
+	10111 -> 101111
+	101110 [label=101110 shape=doublecircle]
+	10111 -> 101110
+	1011101 [label="183: 1011101" color=black fillcolor=yellow shape=invhouse style=filled]
+	101110 -> 1011101
+	1011100 [label=1011100 shape=doublecircle]
+	101110 -> 1011100
+	10111001 [label="107: 10111001" color=black fillcolor=yellow shape=invhouse style=filled]
+	1011100 -> 10111001
+	10111000 [label="97: 10111000" color=black fillcolor=yellow shape=invhouse style=filled]
+	1011100 -> 10111000
+	10110 [label=10110 shape=doublecircle]
+	1011 -> 10110
+	101101 [label=101101 shape=doublecircle]
+	10110 -> 101101
+	1011011 [label="96: 1011011" color=black fillcolor=yellow shape=invhouse style=filled]
+	101101 -> 1011011
+	1011010 [label="30: 1011010" color=black fillcolor=yellow shape=invhouse style=filled]
+	101101 -> 1011010
+	101100 [label=101100 shape=doublecircle]
+	10110 -> 101100
+	1011001 [label="126: 1011001" color=black fillcolor=yellow shape=invhouse style=filled]
+	101100 -> 1011001
+	1011000 [label=1011000 shape=doublecircle]
+	101100 -> 1011000
+	10110001 [label="86: 10110001" color=black fillcolor=yellow shape=invhouse style=filled]
+	1011000 -> 10110001
+	10110000 [label="87: 10110000" color=black fillcolor=yellow shape=invhouse style=filled]
+	1011000 -> 10110000
+	1010 [label=1010 shape=doublecircle]
+	101 -> 1010
+	10101 [label=10101 shape=doublecircle]
+	1010 -> 10101
+	101011 [label=101011 shape=doublecircle]
+	10101 -> 101011
+	1010111 [label=1010111 shape=doublecircle]
+	101011 -> 1010111
+	10101111 [label="93: 10101111" color=black fillcolor=yellow shape=invhouse style=filled]
+	1010111 -> 10101111
+	10101110 [label="94: 10101110" color=black fillcolor=yellow shape=invhouse style=filled]
+	1010111 -> 10101110
+	1010110 [label=1010110 shape=doublecircle]
+	101011 -> 1010110
+	10101101 [label="98: 10101101" color=black fillcolor=yellow shape=invhouse style=filled]
+	1010110 -> 10101101
+	10101100 [label="104: 10101100" color=black fillcolor=yellow shape=invhouse style=filled]
+	1010110 -> 10101100
+	101010 [label=101010 shape=doublecircle]
+	10101 -> 101010
+	1010101 [label="219: 1010101" color=black fillcolor=yellow shape=invhouse style=filled]
+	101010 -> 1010101
+	1010100 [label="186: 1010100" color=black fillcolor=yellow shape=invhouse style=filled]
+	101010 -> 1010100
+	10100 [label=10100 shape=doublecircle]
+	1010 -> 10100
+	101001 [label=101001 shape=doublecircle]
+	10100 -> 101001
+	1010011 [label="181: 1010011" color=black fillcolor=yellow shape=invhouse style=filled]
+	101001 -> 1010011
+	1010010 [label=1010010 shape=doublecircle]
+	101001 -> 1010010
+	10100101 [label="130: 10100101" color=black fillcolor=yellow shape=invhouse style=filled]
+	1010010 -> 10100101
+	10100100 [label=10100100 shape=doublecircle]
+	1010010 -> 10100100
+	101001001 [label="0: 101001001" color=black fillcolor=yellow shape=invhouse style=filled]
+	10100100 -> 101001001
+	101001000 [label="138: 101001000" color=black fillcolor=yellow shape=invhouse style=filled]
+	10100100 -> 101001000
+	101000 [label="218: 101000" color=black fillcolor=yellow shape=invhouse style=filled]
+	10100 -> 101000
+	100 [label=100 shape=doublecircle]
+	10 -> 100
+	1001 [label=1001 shape=doublecircle]
+	100 -> 1001
+	10011 [label=10011 shape=doublecircle]
+	1001 -> 10011
+	100111 [label=100111 shape=doublecircle]
+	10011 -> 100111
+	1001111 [label=1001111 shape=doublecircle]
+	100111 -> 1001111
+	10011111 [label="99: 10011111" color=black fillcolor=yellow shape=invhouse style=filled]
+	1001111 -> 10011111
+	10011110 [label="88: 10011110" color=black fillcolor=yellow shape=invhouse style=filled]
+	1001111 -> 10011110
+	1001110 [label="188: 1001110" color=black fillcolor=yellow shape=invhouse style=filled]
+	100111 -> 1001110
+	100110 [label=100110 shape=doublecircle]
+	10011 -> 100110
+	1001101 [label="24: 1001101" color=black fillcolor=yellow shape=invhouse style=filled]
+	100110 -> 1001101
+	1001100 [label=1001100 shape=doublecircle]
+	100110 -> 1001100
+	10011001 [label="103: 10011001" color=black fillcolor=yellow shape=invhouse style=filled]
+	1001100 -> 10011001
+	10011000 [label="100: 10011000" color=black fillcolor=yellow shape=invhouse style=filled]
+	1001100 -> 10011000
+	10010 [label=10010 shape=doublecircle]
+	1001 -> 10010
+	100101 [label=100101 shape=doublecircle]
+	10010 -> 100101
+	1001011 [label="101: 1001011" color=black fillcolor=yellow shape=invhouse style=filled]
+	100101 -> 1001011
+	1001010 [label="176: 1001010" color=black fillcolor=yellow shape=invhouse style=filled]
+	100101 -> 1001010
+	100100 [label=100100 shape=doublecircle]
+	10010 -> 100100
+	1001001 [label=1001001 shape=doublecircle]
+	100100 -> 1001001
+	10010011 [label="102: 10010011" color=black fillcolor=yellow shape=invhouse style=filled]
+	1001001 -> 10010011
+	10010010 [label="92: 10010010" color=black fillcolor=yellow shape=invhouse style=filled]
+	1001001 -> 10010010
+	1001000 [label=1001000 shape=doublecircle]
+	100100 -> 1001000
+	10010001 [label="4: 10010001" color=black fillcolor=yellow shape=invhouse style=filled]
+	1001000 -> 10010001
+	10010000 [label="69: 10010000" color=black fillcolor=yellow shape=invhouse style=filled]
+	1001000 -> 10010000
+	1000 [label=1000 shape=doublecircle]
+	100 -> 1000
+	10001 [label=10001 shape=doublecircle]
+	1000 -> 10001
+	100011 [label="242: 100011" color=black fillcolor=yellow shape=invhouse style=filled]
+	10001 -> 100011
+	100010 [label="234: 100010" color=black fillcolor=yellow shape=invhouse style=filled]
+	10001 -> 100010
+	10000 [label=10000 shape=doublecircle]
+	1000 -> 10000
+	100001 [label=100001 shape=doublecircle]
+	10000 -> 100001
+	1000011 [label="29: 1000011" color=black fillcolor=yellow shape=invhouse style=filled]
+	100001 -> 1000011
+	1000010 [label="66: 1000010" color=black fillcolor=yellow shape=invhouse style=filled]
+	100001 -> 1000010
+	100000 [label=100000 shape=doublecircle]
+	10000 -> 100000
+	1000001 [label="170: 1000001" color=black fillcolor=yellow shape=invhouse style=filled]
+	100000 -> 1000001
+	1000000 [label=1000000 shape=doublecircle]
+	100000 -> 1000000
+	10000001 [label="89: 10000001" color=black fillcolor=yellow shape=invhouse style=filled]
+	1000000 -> 10000001
+	10000000 [label="90: 10000000" color=black fillcolor=yellow shape=invhouse style=filled]
+	1000000 -> 10000000
+	0 [label=0 shape=doublecircle]
+	"" -> 0
+	01 [label=01 shape=doublecircle]
+	0 -> 01
+	011 [label=011 shape=doublecircle]
+	01 -> 011
+	0111 [label=0111 shape=doublecircle]
+	011 -> 0111
+	01111 [label=01111 shape=doublecircle]
+	0111 -> 01111
+	011111 [label=011111 shape=doublecircle]
+	01111 -> 011111
+	0111111 [label="231: 0111111" color=black fillcolor=yellow shape=invhouse style=filled]
+	011111 -> 0111111
+	0111110 [label="254: 0111110" color=black fillcolor=yellow shape=invhouse style=filled]
+	011111 -> 0111110
+	011110 [label="238: 011110" color=black fillcolor=yellow shape=invhouse style=filled]
+	01111 -> 011110
+	01110 [label=01110 shape=doublecircle]
+	0111 -> 01110
+	011101 [label=011101 shape=doublecircle]
+	01110 -> 011101
+	0111011 [label="91: 0111011" color=black fillcolor=yellow shape=invhouse style=filled]
+	011101 -> 0111011
+	0111010 [label=0111010 shape=doublecircle]
+	011101 -> 0111010
+	01110101 [label="163: 01110101" color=black fillcolor=yellow shape=invhouse style=filled]
+	0111010 -> 01110101
+	01110100 [label="2: 01110100" color=black fillcolor=yellow shape=invhouse style=filled]
+	0111010 -> 01110100
+	011100 [label="229: 011100" color=black fillcolor=yellow shape=invhouse style=filled]
+	01110 -> 011100
+	0110 [label=0110 shape=doublecircle]
+	011 -> 0110
+	01101 [label=01101 shape=doublecircle]
+	0110 -> 01101
+	011011 [label=011011 shape=doublecircle]
+	01101 -> 011011
+	0110111 [label="194: 0110111" color=black fillcolor=yellow shape=invhouse style=filled]
+	011011 -> 0110111
+	0110110 [label=0110110 shape=doublecircle]
+	011011 -> 0110110
+	01101101 [label="1: 01101101" color=black fillcolor=yellow shape=invhouse style=filled]
+	0110110 -> 01101101
+	01101100 [label="3: 01101100" color=black fillcolor=yellow shape=invhouse style=filled]
+	0110110 -> 01101100
+	011010 [label=011010 shape=doublecircle]
+	01101 -> 011010
+	0110101 [label="185: 0110101" color=black fillcolor=yellow shape=invhouse style=filled]
+	011010 -> 0110101
+	0110100 [label=0110100 shape=doublecircle]
+	011010 -> 0110100
+	01101001 [label="149: 01101001" color=black fillcolor=yellow shape=invhouse style=filled]
+	0110100 -> 01101001
+	01101000 [label="68: 01101000" color=black fillcolor=yellow shape=invhouse style=filled]
+	0110100 -> 01101000
+	01100 [label=01100 shape=doublecircle]
+	0110 -> 01100
+	011001 [label=011001 shape=doublecircle]
+	01100 -> 011001
+	0110011 [label="192: 0110011" color=black fillcolor=yellow shape=invhouse style=filled]
+	011001 -> 0110011
+	0110010 [label="206: 0110010" color=black fillcolor=yellow shape=invhouse style=filled]
+	011001 -> 0110010
+	011000 [label=011000 shape=doublecircle]
+	01100 -> 011000
+	0110001 [label="198: 0110001" color=black fillcolor=yellow shape=invhouse style=filled]
+	011000 -> 0110001
+	0110000 [label=0110000 shape=doublecircle]
+	011000 -> 0110000
+	01100001 [label="160: 01100001" color=black fillcolor=yellow shape=invhouse style=filled]
+	0110000 -> 01100001
+	01100000 [label="154: 01100000" color=black fillcolor=yellow shape=invhouse style=filled]
+	0110000 -> 01100000
+	010 [label=010 shape=doublecircle]
+	01 -> 010
+	0101 [label=0101 shape=doublecircle]
+	010 -> 0101
+	01011 [label=01011 shape=doublecircle]
+	0101 -> 01011
+	010111 [label=010111 shape=doublecircle]
+	01011 -> 010111
+	0101111 [label="200: 0101111" color=black fillcolor=yellow shape=invhouse style=filled]
+	010111 -> 0101111
+	0101110 [label="153: 0101110" color=black fillcolor=yellow shape=invhouse style=filled]
+	010111 -> 0101110
+	010110 [label=010110 shape=doublecircle]
+	01011 -> 010110
+	0101101 [label="40: 0101101" color=black fillcolor=yellow shape=invhouse style=filled]
+	010110 -> 0101101
+	0101100 [label="48: 0101100" color=black fillcolor=yellow shape=invhouse style=filled]
+	010110 -> 0101100
+	01010 [label=01010 shape=doublecircle]
+	0101 -> 01010
+	010101 [label=010101 shape=doublecircle]
+	01010 -> 010101
+	0101011 [label="204: 0101011" color=black fillcolor=yellow shape=invhouse style=filled]
+	010101 -> 0101011
+	0101010 [label=0101010 shape=doublecircle]
+	010101 -> 0101010
+	01010101 [label="61: 01010101" color=black fillcolor=yellow shape=invhouse style=filled]
+	0101010 -> 01010101
+	01010100 [label="165: 01010100" color=black fillcolor=yellow shape=invhouse style=filled]
+	0101010 -> 01010100
+	010100 [label=010100 shape=doublecircle]
+	01010 -> 010100
+	0101001 [label=0101001 shape=doublecircle]
+	010100 -> 0101001
+	01010011 [label="65: 01010011" color=black fillcolor=yellow shape=invhouse style=filled]
+	0101001 -> 01010011
+	01010010 [label="17: 01010010" color=black fillcolor=yellow shape=invhouse style=filled]
+	0101001 -> 01010010
+	0101000 [label="190: 0101000" color=black fillcolor=yellow shape=invhouse style=filled]
+	010100 -> 0101000
+	0100 [label=0100 shape=doublecircle]
+	010 -> 0100
+	01001 [label=01001 shape=doublecircle]
+	0100 -> 01001
+	010011 [label=010011 shape=doublecircle]
+	01001 -> 010011
+	0100111 [label="209: 0100111" color=black fillcolor=yellow shape=invhouse style=filled]
+	010011 -> 0100111
+	0100110 [label=0100110 shape=doublecircle]
+	010011 -> 0100110
+	01001101 [label="139: 01001101" color=black fillcolor=yellow shape=invhouse style=filled]
+	0100110 -> 01001101
+	01001100 [label="166: 01001100" color=black fillcolor=yellow shape=invhouse style=filled]
+	0100110 -> 01001100
+	010010 [label=010010 shape=doublecircle]
+	01001 -> 010010
+	0100101 [label="252: 0100101" color=black fillcolor=yellow shape=invhouse style=filled]
+	010010 -> 0100101
+	0100100 [label=0100100 shape=doublecircle]
+	010010 -> 0100100
+	01001001 [label="140: 01001001" color=black fillcolor=yellow shape=invhouse style=filled]
+	0100100 -> 01001001
+	01001000 [label="23: 01001000" color=black fillcolor=yellow shape=invhouse style=filled]
+	0100100 -> 01001000
+	01000 [label=01000 shape=doublecircle]
+	0100 -> 01000
+	010001 [label=010001 shape=doublecircle]
+	01000 -> 010001
+	0100011 [label="43: 0100011" color=black fillcolor=yellow shape=invhouse style=filled]
+	010001 -> 0100011
+	0100010 [label="55: 0100010" color=black fillcolor=yellow shape=invhouse style=filled]
+	010001 -> 0100010
+	010000 [label=010000 shape=doublecircle]
+	01000 -> 010000
+	0100001 [label="58: 0100001" color=black fillcolor=yellow shape=invhouse style=filled]
+	010000 -> 0100001
+	0100000 [label="159: 0100000" color=black fillcolor=yellow shape=invhouse style=filled]
+	010000 -> 0100000
+	00 [label=00 shape=doublecircle]
+	0 -> 00
+	001 [label=001 shape=doublecircle]
+	00 -> 001
+	0011 [label=0011 shape=doublecircle]
+	001 -> 0011
+	00111 [label=00111 shape=doublecircle]
+	0011 -> 00111
+	001111 [label=001111 shape=doublecircle]
+	00111 -> 001111
+	0011111 [label=0011111 shape=doublecircle]
+	001111 -> 0011111
+	00111111 [label="137: 00111111" color=black fillcolor=yellow shape=invhouse style=filled]
+	0011111 -> 00111111
+	00111110 [label="135: 00111110" color=black fillcolor=yellow shape=invhouse style=filled]
+	0011111 -> 00111110
+	0011110 [label="202: 0011110" color=black fillcolor=yellow shape=invhouse style=filled]
+	001111 -> 0011110
+	001110 [label=001110 shape=doublecircle]
+	00111 -> 001110
+	0011101 [label=0011101 shape=doublecircle]
+	001110 -> 0011101
+	00111011 [label="169: 00111011" color=black fillcolor=yellow shape=invhouse style=filled]
+	0011101 -> 00111011
+	00111010 [label="141: 00111010" color=black fillcolor=yellow shape=invhouse style=filled]
+	0011101 -> 00111010
+	0011100 [label=0011100 shape=doublecircle]
+	001110 -> 0011100
+	00111001 [label="16: 00111001" color=black fillcolor=yellow shape=invhouse style=filled]
+	0011100 -> 00111001
+	00111000 [label="164: 00111000" color=black fillcolor=yellow shape=invhouse style=filled]
+	0011100 -> 00111000
+	00110 [label=00110 shape=doublecircle]
+	0011 -> 00110
+	001101 [label=001101 shape=doublecircle]
+	00110 -> 001101
+	0011011 [label=0011011 shape=doublecircle]
+	001101 -> 0011011
+	00110111 [label="5: 00110111" color=black fillcolor=yellow shape=invhouse style=filled]
+	0011011 -> 00110111
+	00110110 [label="15: 00110110" color=black fillcolor=yellow shape=invhouse style=filled]
+	0011011 -> 00110110
+	0011010 [label=0011010 shape=doublecircle]
+	001101 -> 0011010
+	00110101 [label="151: 00110101" color=black fillcolor=yellow shape=invhouse style=filled]
+	0011010 -> 00110101
+	00110100 [label="21: 00110100" color=black fillcolor=yellow shape=invhouse style=filled]
+	0011010 -> 00110100
+	001100 [label=001100 shape=doublecircle]
+	00110 -> 001100
+	0011001 [label="247: 0011001" color=black fillcolor=yellow shape=invhouse style=filled]
+	001100 -> 0011001
+	0011000 [label=0011000 shape=doublecircle]
+	001100 -> 0011000
+	00110001 [label=00110001 shape=doublecircle]
+	0011000 -> 00110001
+	001100011 [label="142: 001100011" color=black fillcolor=yellow shape=invhouse style=filled]
+	00110001 -> 001100011
+	001100010 [label="144: 001100010" color=black fillcolor=yellow shape=invhouse style=filled]
+	00110001 -> 001100010
+	00110000 [label="172: 00110000" color=black fillcolor=yellow shape=invhouse style=filled]
+	0011000 -> 00110000
+	0010 [label=0010 shape=doublecircle]
+	001 -> 0010
+	00101 [label=00101 shape=doublecircle]
+	0010 -> 00101
+	001011 [label=001011 shape=doublecircle]
+	00101 -> 001011
+	0010111 [label="27: 0010111" color=black fillcolor=yellow shape=invhouse style=filled]
+	001011 -> 0010111
+	0010110 [label="51: 0010110" color=black fillcolor=yellow shape=invhouse style=filled]
+	001011 -> 0010110
+	001010 [label=001010 shape=doublecircle]
+	00101 -> 001010
+	0010101 [label=0010101 shape=doublecircle]
+	001010 -> 0010101
+	00101011 [label="11: 00101011" color=black fillcolor=yellow shape=invhouse style=filled]
+	0010101 -> 00101011
+	00101010 [label="249: 00101010" color=black fillcolor=yellow shape=invhouse style=filled]
+	0010101 -> 00101010
+	0010100 [label=0010100 shape=doublecircle]
+	001010 -> 0010100
+	00101001 [label="19: 00101001" color=black fillcolor=yellow shape=invhouse style=filled]
+	0010100 -> 00101001
+	00101000 [label=00101000 shape=doublecircle]
+	0010100 -> 00101000
+	001010001 [label="122: 001010001" color=black fillcolor=yellow shape=invhouse style=filled]
+	00101000 -> 001010001
+	001010000 [label="76: 001010000" color=black fillcolor=yellow shape=invhouse style=filled]
+	00101000 -> 001010000
+	00100 [label=00100 shape=doublecircle]
+	0010 -> 00100
+	001001 [label=001001 shape=doublecircle]
+	00100 -> 001001
+	0010011 [label=0010011 shape=doublecircle]
+	001001 -> 0010011
+	00100111 [label="77: 00100111" color=black fillcolor=yellow shape=invhouse style=filled]
+	0010011 -> 00100111
+	00100110 [label="75: 00100110" color=black fillcolor=yellow shape=invhouse style=filled]
+	0010011 -> 00100110
+	0010010 [label=0010010 shape=doublecircle]
+	001001 -> 0010010
+	00100101 [label="121: 00100101" color=black fillcolor=yellow shape=invhouse style=filled]
+	0010010 -> 00100101
+	00100100 [label="33: 00100100" color=black fillcolor=yellow shape=invhouse style=filled]
+	0010010 -> 00100100
+	001000 [label=001000 shape=doublecircle]
+	00100 -> 001000
+	0010001 [label="211: 0010001" color=black fillcolor=yellow shape=invhouse style=filled]
+	001000 -> 0010001
+	0010000 [label=0010000 shape=doublecircle]
+	001000 -> 0010000
+	00100001 [label="64: 00100001" color=black fillcolor=yellow shape=invhouse style=filled]
+	0010000 -> 00100001
+	00100000 [label="131: 00100000" color=black fillcolor=yellow shape=invhouse style=filled]
+	0010000 -> 00100000
+	000 [label=000 shape=doublecircle]
+	00 -> 000
+	0001 [label=0001 shape=doublecircle]
+	000 -> 0001
+	00011 [label=00011 shape=doublecircle]
+	0001 -> 00011
+	000111 [label=000111 shape=doublecircle]
+	00011 -> 000111
+	0001111 [label="46: 0001111" color=black fillcolor=yellow shape=invhouse style=filled]
+	000111 -> 0001111
+	0001110 [label=0001110 shape=doublecircle]
+	000111 -> 0001110
+	00011101 [label="56: 00011101" color=black fillcolor=yellow shape=invhouse style=filled]
+	0001110 -> 00011101
+	00011100 [label="143: 00011100" color=black fillcolor=yellow shape=invhouse style=filled]
+	0001110 -> 00011100
+	000110 [label=000110 shape=doublecircle]
+	00011 -> 000110
+	0001101 [label=0001101 shape=doublecircle]
+	000110 -> 0001101
+	00011011 [label="73: 00011011" color=black fillcolor=yellow shape=invhouse style=filled]
+	0001101 -> 00011011
+	00011010 [label=00011010 shape=doublecircle]
+	0001101 -> 00011010
+	000110101 [label="74: 000110101" color=black fillcolor=yellow shape=invhouse style=filled]
+	00011010 -> 000110101
+	000110100 [label="78: 000110100" color=black fillcolor=yellow shape=invhouse style=filled]
+	00011010 -> 000110100
+	0001100 [label=0001100 shape=doublecircle]
+	000110 -> 0001100
+	00011001 [label="167: 00011001" color=black fillcolor=yellow shape=invhouse style=filled]
+	0001100 -> 00011001
+	00011000 [label="145: 00011000" color=black fillcolor=yellow shape=invhouse style=filled]
+	0001100 -> 00011000
+	00010 [label=00010 shape=doublecircle]
+	0001 -> 00010
+	000101 [label=000101 shape=doublecircle]
+	00010 -> 000101
+	0001011 [label=0001011 shape=doublecircle]
+	000101 -> 0001011
+	00010111 [label="14: 00010111" color=black fillcolor=yellow shape=invhouse style=filled]
+	0001011 -> 00010111
+	00010110 [label=00010110 shape=doublecircle]
+	0001011 -> 00010110
+	000101101 [label="132: 000101101" color=black fillcolor=yellow shape=invhouse style=filled]
+	00010110 -> 000101101
+	000101100 [label="147: 000101100" color=black fillcolor=yellow shape=invhouse style=filled]
+	00010110 -> 000101100
+	0001010 [label=0001010 shape=doublecircle]
+	000101 -> 0001010
+	00010101 [label="129: 00010101" color=black fillcolor=yellow shape=invhouse style=filled]
+	0001010 -> 00010101
+	00010100 [label=00010100 shape=doublecircle]
+	0001010 -> 00010100
+	000101001 [label="124: 000101001" color=black fillcolor=yellow shape=invhouse style=filled]
+	00010100 -> 000101001
+	000101000 [label="80: 000101000" color=black fillcolor=yellow shape=invhouse style=filled]
+	00010100 -> 000101000
+	000100 [label=000100 shape=doublecircle]
+	00010 -> 000100
+	0001001 [label=0001001 shape=doublecircle]
+	000100 -> 0001001
+	00010011 [label="8: 00010011" color=black fillcolor=yellow shape=invhouse style=filled]
+	0001001 -> 00010011
+	00010010 [label="123: 00010010" color=black fillcolor=yellow shape=invhouse style=filled]
+	0001001 -> 00010010
+	0001000 [label=0001000 shape=doublecircle]
+	000100 -> 0001000
+	00010001 [label="62: 00010001" color=black fillcolor=yellow shape=invhouse style=filled]
+	0001000 -> 00010001
+	00010000 [label=00010000 shape=doublecircle]
+	0001000 -> 00010000
+	000100001 [label="81: 000100001" color=black fillcolor=yellow shape=invhouse style=filled]
+	00010000 -> 000100001
+	000100000 [label="72: 000100000" color=black fillcolor=yellow shape=invhouse style=filled]
+	00010000 -> 000100000
+	0000 [label=0000 shape=doublecircle]
+	000 -> 0000
+	00001 [label=00001 shape=doublecircle]
+	0000 -> 00001
+	000011 [label=000011 shape=doublecircle]
+	00001 -> 000011
+	0000111 [label=0000111 shape=doublecircle]
+	000011 -> 0000111
+	00001111 [label="79: 00001111" color=black fillcolor=yellow shape=invhouse style=filled]
+	0000111 -> 00001111
+	00001110 [label="41: 00001110" color=black fillcolor=yellow shape=invhouse style=filled]
+	0000111 -> 00001110
+	0000110 [label=0000110 shape=doublecircle]
+	000011 -> 0000110
+	00001101 [label="12: 00001101" color=black fillcolor=yellow shape=invhouse style=filled]
+	0000110 -> 00001101
+	00001100 [label="37: 00001100" color=black fillcolor=yellow shape=invhouse style=filled]
+	0000110 -> 00001100
+	000010 [label=000010 shape=doublecircle]
+	00001 -> 000010
+	0000101 [label=0000101 shape=doublecircle]
+	000010 -> 0000101
+	00001011 [label="32: 00001011" color=black fillcolor=yellow shape=invhouse style=filled]
+	0000101 -> 00001011
+	00001010 [label=00001010 shape=doublecircle]
+	0000101 -> 00001010
+	000010101 [label="128: 000010101" color=black fillcolor=yellow shape=invhouse style=filled]
+	00001010 -> 000010101
+	000010100 [label="136: 000010100" color=black fillcolor=yellow shape=invhouse style=filled]
+	00001010 -> 000010100
+	0000100 [label=0000100 shape=doublecircle]
+	000010 -> 0000100
+	00001001 [label="118: 00001001" color=black fillcolor=yellow shape=invhouse style=filled]
+	0000100 -> 00001001
+	00001000 [label="133: 00001000" color=black fillcolor=yellow shape=invhouse style=filled]
+	0000100 -> 00001000
+	00000 [label=00000 shape=doublecircle]
+	0000 -> 00000
+	000001 [label=000001 shape=doublecircle]
+	00000 -> 000001
+	0000011 [label=0000011 shape=doublecircle]
+	000001 -> 0000011
+	00000111 [label="60: 00000111" color=black fillcolor=yellow shape=invhouse style=filled]
+	0000011 -> 00000111
+	00000110 [label=00000110 shape=doublecircle]
+	0000011 -> 00000110
+	000001101 [label="117: 000001101" color=black fillcolor=yellow shape=invhouse style=filled]
+	00000110 -> 000001101
+	000001100 [label="146: 000001100" color=black fillcolor=yellow shape=invhouse style=filled]
+	00000110 -> 000001100
+	0000010 [label=0000010 shape=doublecircle]
+	000001 -> 0000010
+	00000101 [label="82: 00000101" color=black fillcolor=yellow shape=invhouse style=filled]
+	0000010 -> 00000101
+	00000100 [label="109: 00000100" color=black fillcolor=yellow shape=invhouse style=filled]
+	0000010 -> 00000100
+	000000 [label=000000 shape=doublecircle]
+	00000 -> 000000
+	0000001 [label="175: 0000001" color=black fillcolor=yellow shape=invhouse style=filled]
+	000000 -> 0000001
+	0000000 [label=0000000 shape=doublecircle]
+	000000 -> 0000000
+	00000001 [label="35: 00000001" color=black fillcolor=yellow shape=invhouse style=filled]
+	0000000 -> 00000001
+	00000000 [label="178: 00000000" color=black fillcolor=yellow shape=invhouse style=filled]
+	0000000 -> 00000000
+}
